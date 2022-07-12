@@ -33,6 +33,8 @@ public class Resolver {
                         String.format(t.getExpression(), matcher.group().split(":")));
             }
         }
-        return String.join(" ", strings);
+        String s = String.join(" ", strings);
+        System.out.println(s);
+        return s;
     }
 }
