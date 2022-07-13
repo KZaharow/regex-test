@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 public class Template {
     private String expression;
     private Pattern pattern;
-    private boolean isObligate;
+    private boolean isReplaced;
 
     @Override
     public String toString() {
