@@ -1,4 +1,6 @@
-import lombok.RequiredArgsConstructor;
+package com.zahar.regex.model;
+
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,11 +8,10 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@RequiredArgsConstructor
+@Data
 public class Resolver {
-
-    private final String query;
-    private final String replace;
+    private String query;
+    private String replace;
     private static final List<Template> TEMPLATES = Arrays.asList(
             new Template("SELECT %s", Pattern.compile("(?<value>(?<=#).+?(?=#))"), false),
             new Template("FROM %s", Pattern.compile("(?<select>^.+?(?=#))"), false),

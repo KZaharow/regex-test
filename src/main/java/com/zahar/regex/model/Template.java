@@ -1,3 +1,5 @@
+package com.zahar.regex.model;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
